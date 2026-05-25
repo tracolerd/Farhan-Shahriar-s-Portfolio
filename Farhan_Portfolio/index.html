@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhan Shahriar — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" />
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- VanillaTilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════ CURSOR ═══════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-initials">FS</span>
+      <span class="logo-name">Farhan Shahriar</span>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-texture"></div>
+    <div class="hero-grain"></div>
+
+    <!-- Background decorative elements -->
+    <div class="hero-deco hero-deco--ring1"></div>
+    <div class="hero-deco hero-deco--ring2"></div>
+    <div class="hero-deco hero-deco--line"></div>
+
+    <div class="hero-content">
+      <div class="hero-text-block">
+        <p class="hero-eyebrow hero-el" data-hero-delay="0">Political Science Graduate · Dhaka</p>
+        <h1 class="hero-name hero-el" data-hero-delay="0.12">
+          <span class="name-first">Farhan</span>
+          <span class="name-last">Shahriar</span>
+        </h1>
+        <p class="hero-tagline hero-el" data-hero-delay="0.24">
+          Operations Leader &amp; AI-Enabled Specialist <br />
+          Driving efficiency through technology and insight.
+        </p>
+        <div class="hero-actions hero-el" data-hero-delay="0.36">
+          <a href="#contact" class="btn btn--primary ripple">Get In Touch</a>
+          <a href="#about" class="btn btn--ghost ripple">Explore Profile</a>
+        </div>
+        <div class="hero-social hero-el" data-hero-delay="0.46">
+          <a href="https://www.facebook.com/share/18MZ8J9smY/?mibextid=wwXIfr"
+             target="_blank" rel="noopener noreferrer"
+             class="social-pill" id="fbLink" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/shahriar_efaz_?igsh=MTJxcmFzcTkydTd0eg=="
+             target="_blank" rel="noopener noreferrer"
+             class="social-pill" id="igLink" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-block" data-tilt data-tilt-max="8" data-tilt-speed="600" data-tilt-glare="true" data-tilt-max-glare="0.15">
+        <div class="hero-img-frame">
+          <!-- Replace farhan-suit.png with your actual transparent-background formal photo -->
+          <img src="farhan-suit.png" alt="Farhan Shahriar in Formal Suit" class="hero-portrait" id="heroPortrait" />
+          <div class="hero-img-backdrop"></div>
+        </div>
+        <div class="hero-floater hero-floater--1 glass-card">
+          <span class="floater-num">3.33</span>
+          <span class="floater-label">CGPA · Dhaka College</span>
+        </div>
+        <div class="hero-floater hero-floater--2 glass-card">
+          <span class="floater-num">5+</span>
+          <span class="floater-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label" data-animate="fade-up">— About Me</div>
+      <h2 class="section-title" data-animate="fade-up">A Driven Professional<br /><em>with a Purpose</em></h2>
+      <div class="about-grid">
+        <div class="about-statement glass-card" data-animate="fade-up">
+          <p>
+            I am a Political Science graduate from the University of Dhaka with a strong foundation in analytical thinking and operational management. My goal is to leverage my knowledge and experience within a dynamic organization where my ability to solve complex problems, my sense of responsibility, and my proficiency in AI-powered tools will serve as meaningful assets.
+          </p>
+        </div>
+        <div class="about-info-cards">
+          <div class="info-card glass-card" data-animate="fade-up" data-delay="0.1">
+            <div class="info-icon">🎓</div>
+            <div>
+              <strong>BSS in Political Science</strong>
+              <span>University of Dhaka, 2024</span>
+            </div>
+          </div>
+          <div class="info-card glass-card" data-animate="fade-up" data-delay="0.15">
+            <div class="info-icon">💼</div>
+            <div>
+              <strong>Cashier Manager</strong>
+              <span>Aarong Fashion, 2021–Present</span>
+            </div>
+          </div>
+          <div class="info-card glass-card" data-animate="fade-up" data-delay="0.2">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Based in Dhaka</strong>
+              <span>Rayerbag, Jatrabari, Dhaka-1236</span>
+            </div>
+          </div>
+          <div class="info-card glass-card" data-animate="fade-up" data-delay="0.25">
+            <div class="info-icon">🩸</div>
+            <div>
+              <strong>Blood Group: O (+ve)</strong>
+              <span>DOB: 8 August, 2001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-label" data-animate="fade-up">— Academic Journey</div>
+      <h2 class="section-title" data-animate="fade-up">Education &amp;<br /><em>Qualifications</em></h2>
+
+      <div class="edu-timeline">
+        <!-- BSS -->
+        <div class="edu-card glass-card" data-animate="fade-up" data-tilt data-tilt-max="5" data-tilt-speed="500">
+          <div class="edu-year-badge">2024</div>
+          <div class="edu-body">
+            <h3>Bachelor of Social Sciences (B.S.S.)</h3>
+            <p class="edu-major">Major: Political Science</p>
+            <p class="edu-institution">Dhaka College · University of Dhaka</p>
+            <div class="edu-meta">
+              <span class="edu-tag">Session: 2020–21</span>
+              <span class="edu-result">CGPA 3.33 / 4.00</span>
+            </div>
+          </div>
+          <div class="edu-gpa-ring">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" class="ring-bg"/>
+              <circle cx="30" cy="30" r="26" class="ring-fill" style="--pct:83.25"/>
+            </svg>
+            <span>3.33</span>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="edu-card glass-card" data-animate="fade-up" data-delay="0.1" data-tilt data-tilt-max="5" data-tilt-speed="500">
+          <div class="edu-year-badge">2020</div>
+          <div class="edu-body">
+            <h3>Higher Secondary Certificate (H.S.C.)</h3>
+            <p class="edu-major">Group: Business Studies</p>
+            <p class="edu-institution">Govt. Kabi Nazrul College · Dhaka Board</p>
+            <div class="edu-meta">
+              <span class="edu-tag">Dhaka Board</span>
+              <span class="edu-result">GPA 4.25 / 5.00</span>
+            </div>
+          </div>
+          <div class="edu-gpa-ring">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" class="ring-bg"/>
+              <circle cx="30" cy="30" r="26" class="ring-fill" style="--pct:85"/>
+            </svg>
+            <span>4.25</span>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="edu-card glass-card" data-animate="fade-up" data-delay="0.2" data-tilt data-tilt-max="5" data-tilt-speed="500">
+          <div class="edu-year-badge">2018</div>
+          <div class="edu-body">
+            <h3>Secondary School Certificate (S.S.C.)</h3>
+            <p class="edu-major">Group: Business Studies</p>
+            <p class="edu-institution">Chatkhil PG Government High School · Cumilla Board</p>
+            <div class="edu-meta">
+              <span class="edu-tag">Cumilla Board</span>
+              <span class="edu-result">GPA 4.22 / 5.00</span>
+            </div>
+          </div>
+          <div class="edu-gpa-ring">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" class="ring-bg"/>
+              <circle cx="30" cy="30" r="26" class="ring-fill" style="--pct:84.4"/>
+            </svg>
+            <span>4.22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-label" data-animate="fade-up">— Professional Track</div>
+      <h2 class="section-title" data-animate="fade-up">Work Experience &amp;<br /><em>Activities</em></h2>
+
+      <div class="exp-grid">
+        <!-- Work -->
+        <div class="exp-card glass-card" data-animate="fade-left" data-tilt data-tilt-max="6" data-tilt-speed="500">
+          <div class="exp-icon">💼</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3>Cashier Manager</h3>
+                <p class="exp-company">Aarong Fashion</p>
+              </div>
+              <span class="exp-duration">2021 – Present</span>
+            </div>
+            <p class="exp-desc">
+              Overseeing daily cashiering operations, managing transaction records, supervising floor-level financial activities, and ensuring a seamless customer payment experience in one of Bangladesh's most prominent fashion retail brands.
+            </p>
+          </div>
+        </div>
+
+        <!-- Club -->
+        <div class="exp-card glass-card" data-animate="fade-right" data-delay="0.1" data-tilt data-tilt-max="6" data-tilt-speed="500">
+          <div class="exp-icon">🗣️</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3>General Member</h3>
+                <p class="exp-company">Dhaka College English Language Club</p>
+              </div>
+              <span class="exp-duration">4 Years</span>
+            </div>
+            <p class="exp-desc">
+              Active member of the English Language Club at Dhaka College (Dhanmondi, Dhaka), contributing to events, workshops, and language-development sessions that fostered communication and leadership skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label" data-animate="fade-up">— Capabilities</div>
+      <h2 class="section-title" data-animate="fade-up">Skills &amp;<br /><em>Competencies</em></h2>
+
+      <div class="skills-grid">
+
+        <!-- AI Specialist -->
+        <div class="skill-card skill-card--featured glass-card" data-animate="fade-up" data-tilt data-tilt-max="7" data-tilt-speed="500" data-tilt-glare="true" data-tilt-max-glare="0.12">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="skill-content">
+            <h3>AI-Enabled Operations Specialist</h3>
+            <p>Highly proficient in utilizing AI tools to maximize productivity across diverse workflows. Experienced with ChatGPT, Gemini, Perplexity, Google AI Studio, Grok, and Claude.</p>
+            <div class="ai-tools-row">
+              <span class="tool-chip">ChatGPT</span>
+              <span class="tool-chip">Gemini</span>
+              <span class="tool-chip">Perplexity</span>
+              <span class="tool-chip">Google AI Studio</span>
+              <span class="tool-chip">Grok</span>
+              <span class="tool-chip">Claude</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MS Office -->
+        <div class="skill-card glass-card" data-animate="fade-up" data-delay="0.1" data-tilt data-tilt-max="7" data-tilt-speed="500">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div class="skill-content">
+            <h3>Microsoft Office Suite</h3>
+            <p>Proficient in Word, Excel, and PowerPoint for document creation, data analysis, and professional presentations.</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--level:88%">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adobe -->
+        <div class="skill-card glass-card" data-animate="fade-up" data-delay="0.15" data-tilt data-tilt-max="7" data-tilt-speed="500">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 19 22 19"/></svg>
+          </div>
+          <div class="skill-content">
+            <h3>Adobe Creative Suite</h3>
+            <p>Skilled in Adobe Photoshop and Adobe Illustrator for graphic design, visual editing, and creative content production.</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--level:75%">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & Research -->
+        <div class="skill-card glass-card" data-animate="fade-up" data-delay="0.2" data-tilt data-tilt-max="7" data-tilt-speed="500">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="skill-content">
+            <h3>Data Entry &amp; Research</h3>
+            <p>Accurate data entry, email communication, and internet research skills, refined through professional experience in retail management.</p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" style="--level:82%">
+                <div class="skill-bar-fill"></div>
+              </div>
+              <span>82%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-card skill-card--lang glass-card" data-animate="fade-up" data-delay="0.25" data-tilt data-tilt-max="7" data-tilt-speed="500">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/></svg>
+          </div>
+          <div class="skill-content">
+            <h3>Language Proficiency</h3>
+            <div class="lang-rows">
+              <div class="lang-row">
+                <span class="lang-name">Bengali</span>
+                <div class="lang-badges">
+                  <span class="lang-badge lang-badge--native">Native</span>
+                  <span class="lang-badge">Proficient Writing</span>
+                </div>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <div class="lang-badges">
+                  <span class="lang-badge">Conversational</span>
+                  <span class="lang-badge">Proficient Writing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label" data-animate="fade-up">— Let's Connect</div>
+      <h2 class="section-title" data-animate="fade-up">Get In<br /><em>Touch</em></h2>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info" data-animate="fade-left">
+          <div class="contact-detail glass-card">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+8801880856320">+880 1880-856320</a>
+            </div>
+          </div>
+          <div class="contact-detail glass-card">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:farhanshahriarefaz@gmail.com" class="email-link">farhanshahriarefaz@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail glass-card">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Rayerbag, Jatrabari, Dhaka-1236</span>
+            </div>
+          </div>
+
+          <!-- Social Profiles — clean icon buttons only -->
+          <div class="social-profiles-card glass-card" data-animate="fade-up">
+            <h4>Social Profiles</h4>
+            <div class="social-icon-row">
+              <a href="https://www.facebook.com/share/18MZ8J9smY/?mibextid=wwXIfr"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn ripple" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/shahriar_efaz_?igsh=MTJxcmFzcTkydTd0eg=="
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn ripple" aria-label="Instagram">
+                <!-- Official Instagram gradient icon -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <defs>
+                    <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%"   stop-color="#f09433"/>
+                      <stop offset="25%"  stop-color="#e6683c"/>
+                      <stop offset="50%"  stop-color="#dc2743"/>
+                      <stop offset="75%"  stop-color="#cc2366"/>
+                      <stop offset="100%" stop-color="#bc1888"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="url(#igGrad)"/>
+                  <circle cx="12" cy="12" r="4.5" fill="none" stroke="white" stroke-width="1.8"/>
+                  <circle cx="17.2" cy="6.8" r="1.2" fill="white"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap glass-card" data-animate="fade-right">
+          <h3>Send a Message</h3>
+          <div class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="senderName">Full Name</label>
+              <input type="text" id="senderName" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Email Address</label>
+              <input type="email" id="senderEmail" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="msgSubject">Subject</label>
+              <input type="text" id="msgSubject" placeholder="Regarding..." />
+            </div>
+            <div class="form-group">
+              <label for="msgBody">Message</label>
+              <textarea id="msgBody" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+            <button class="btn btn--primary ripple" id="sendMsgBtn">Send Message</button>
+            <p class="form-note" id="formNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-initials">FS</span>
+        <span>Farhan Shahriar</span>
+      </div>
+      <p class="footer-copy">
+        I affirm that all information presented on this portfolio is authentic, accurate, and complete to the 
