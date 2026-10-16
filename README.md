@@ -1,6 +1,8 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:19130E,50:7C5A36,100:0F172A&height=190&section=header&text=Farhan%20Shahriar%20%C2%B7%20Portfolio&fontSize=42&fontColor=F1F5F9&fontAlignY=38&animation=fadeIn&desc=A%20responsive%20personal%20portfolio%20built%20with%20HTML%2C%20CSS%2C%20JavaScript%20and%20animation%20libraries&descAlignY=61&descSize=15" alt="Farhan Shahriar · Portfolio animated project banner" width="100%" />
 </p>
+<h1 align="center">Farhan Shahriar — Portfolio</h1>
+
 
 <div align="center">
 
