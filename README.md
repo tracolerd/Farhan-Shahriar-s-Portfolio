@@ -55,7 +55,7 @@ Open `Farhan_Portfolio/index.html` in a browser. For best results, run a local s
 
 ## Status and attribution
 
-This repository contains the front-end implementation for Farhan Shahriar’s portfolio. Site content represents Farhan; implementation and repository maintenance are by [Nurul Faiyaz](https://github.com/tracolerd). External CDN assets require an internet connection.
+This website presents Farhan Shahriar’s profile. Website design, front-end implementation, and repository maintenance are by [Nurul Faiyaz](https://github.com/tracolerd). External CDN assets require an internet connection.
 ---
 
 ## Creator, Developer & Maintainer
