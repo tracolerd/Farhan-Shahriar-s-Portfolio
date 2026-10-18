@@ -56,6 +56,33 @@ Open `Farhan_Portfolio/index.html` in a browser. For best results, run a local s
 ## Status and attribution
 
 This repository contains the front-end implementation for Farhan Shahriar’s portfolio. Site content represents Farhan; implementation and repository maintenance are by [Nurul Faiyaz](https://github.com/tracolerd). External CDN assets require an internet connection.
+---
+
+## Creator, Developer & Maintainer
+
+**Created, designed, developed, and maintained by [Nurul Faiyaz](https://github.com/tracolerd).**
+
+This project is independently built and maintained by Nurul Faiyaz. The project's design, implementation, and documentation are his work.
+
+<p align="center">
+  <a href="https://www.facebook.com/faiyaz.888"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+  <a href="https://www.instagram.com/tracolerd"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="https://www.linkedin.com/in/faiyaz-xyz"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/faiyaz_explores"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://github.com/tracolerd"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:scrollfaiyaz@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://nurul-faiyaz.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-0F766E?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Personal website" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.facebook.com/faiyaz.888">Facebook</a> ·
+  <a href="https://www.instagram.com/tracolerd">Instagram</a> ·
+  <a href="https://www.linkedin.com/in/faiyaz-xyz">LinkedIn</a> ·
+  <a href="https://x.com/faiyaz_explores">X / Twitter</a> ·
+  <a href="https://github.com/tracolerd">GitHub</a> ·
+  <a href="mailto:scrollfaiyaz@gmail.com">Email</a> ·
+  <a href="https://nurul-faiyaz.netlify.app/">Website</a>
+</p>
 
 ## License
 
