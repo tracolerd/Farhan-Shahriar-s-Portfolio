@@ -98,3 +98,7 @@ This website presents Farhan Shahriar. The portfolio implementation, visual desi
 ## License
 
 See [LICENSE](LICENSE) for the license terms.
+
+---
+
+<p align="center"><sub>Portfolio catalog · Project 20 of 22 · <a href="https://github.com/tracolerd">Nurul Faiyaz</a></sub></p>
